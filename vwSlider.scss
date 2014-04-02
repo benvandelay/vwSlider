@@ -1,0 +1,44 @@
+.vwSlider-wrapper {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    
+    .vwSlider {
+        position: relative;
+        left: 0;
+        top: 0;
+        white-space: nowrap;
+        font-size: 0;
+        @include transition(left 0.3s ease);
+    }
+    
+    .vw-elm {
+        display: inline-block;
+        width: 100%;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0;
+        position: relative;
+      
+        img {
+            width: 100%;
+        }
+    }
+    
+    .slider-nav {
+        text-align: center;
+        background: #000;
+        
+        li {
+           display: inline-block;
+           height: 7px;
+           width: 7px;
+           border-radius: 4px;
+           background: #fff;
+           margin: 0 3px;
+        }
+    }
+}
+
+
+
