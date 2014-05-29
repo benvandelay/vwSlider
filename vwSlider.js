@@ -138,9 +138,11 @@
                         autoEnabled = false;
                     },
                     tap : function(e, target) {
-                        var a = $(target).parents('a');
-                        a.click();
-                        window.location.href = a.attr('href');
+                        if($(target).parents('a').length){
+                            var a = $(target).parents('a');
+                            a.click();
+                            window.location.href = a.attr('href');
+                        }
                     },
                     excludedElements : [],
                     threshold : 120,
